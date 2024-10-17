@@ -52,6 +52,8 @@ public class DriverServiceImpl implements DriverService {
 
         Ride ride = rideService.createNewRide(rideRequest, savedDriver);
         return modelMapper.map(ride, RideDto.class);
+
+
     }
 
     @Override
